@@ -19,3 +19,7 @@ using Styx.WoWInternals.WoWObjects;
 using Vector2 = Tripper.Tools.Math.Vector2;
 
 
+// To Do  
+
+
+//  1  dungeonbuddy   dungeon ID  initial check   
