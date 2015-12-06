@@ -49,3 +49,12 @@ namespace Bots.DungeonBuddy.Raids.WarlordsOfDraenor
 
 
 //  1  dungeonbuddy   dungeon ID  initial check   
+
+public class HFC : hellbreachLFR
+	{
+		#region Overrides of Dungeon
+	
+		public override uint DungeonId
+		{
+			get { return 849; }   
+		}
