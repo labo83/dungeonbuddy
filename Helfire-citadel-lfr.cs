@@ -48,7 +48,7 @@ namespace Bots.DungeonBuddy.Raids.WarlordsOfDraenor
 // To Do  
 
 
-//  1  dungeonbuddy   dungeon ID  initial check   
+//  1  dungeonbuddy   dungeon ID  initial check   -- find real dung if for hfc lfr 
 
 public class HFC : hellbreachLFR
 	{
@@ -58,3 +58,7 @@ public class HFC : hellbreachLFR
 		{
 			get { return 849; }   
 		}
+	}
+	
+	
+	
