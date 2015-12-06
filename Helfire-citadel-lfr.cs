@@ -19,6 +19,32 @@ using Styx.WoWInternals.WoWObjects;
 using Vector2 = Tripper.Tools.Math.Vector2;
 
 
+
+// ReSharper disable CheckNamespace
+namespace Bots.DungeonBuddy.Raids.WarlordsOfDraenor
+// ReSharper restore CheckNamespace
+{
+
+	// Class that contains common behavior for all WOD LFRs
+	public abstract class WoDLfr : Dungeon
+	{
+		protected static LocalPlayer Me
+		{
+			get { return StyxWoW.Me; }
+		}
+
+        
+
+        [EncounterHandler(0, "Root Handler")]
+		public virtual async Task<bool> RootBehavior(WoWUnit npc)
+		{
+			if (await ScriptHelpers.CancelCinematicIfPlaying())
+				return true;
+
+			return false;
+		}
+
+	}
 // To Do  
 
 
